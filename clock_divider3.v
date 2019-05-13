@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/01/2019 12:02:28 PM
+// Create Date: 04/04/2019 02:15:33 PM
 // Design Name: 
-// Module Name: clock_divider2
+// Module Name: clock_divider3
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,12 +19,12 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module clock_divider2(clock_in,clock_out,enable);
+module clock_divider3(clock_in,clock_out,enable);
 input clock_in,enable; // input clock on FPGA
 output clock_out; // output clock after dividing the input clock by divisor
 reg[27:0] counter=28'd0;
 reg clock_out;
-parameter DIVISOR = 28'd1250;//use to be 2
+parameter DIVISOR = 28'd500;//use to be 2
 
 always @(posedge clock_in)
 begin
